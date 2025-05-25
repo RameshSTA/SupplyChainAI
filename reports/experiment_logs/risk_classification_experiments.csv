@@ -1,0 +1,2 @@
+Timestamp,Model_Type,Model_Name,Parameters,Accuracy,Precision_Macro,Recall_Macro,F1_Macro
+2025-05-23 07:18:48,RiskCategoryClassifier,MultinomialNB_TFIDF,"{'tfidf_max_df': 0.95, 'tfidf_min_df': 1, 'tfidf_ngram_range': '(1,2)', 'clf_alpha': 0.1, 'model_path': '/Users/ramesh/Desktop/supply_chain_ai_platform/models_store/risk_detection/risk_category_classifier_MultinomialNB_TFIDF_20250523071848.joblib'}",0.0,0.0,0.0,0.0

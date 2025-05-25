@@ -146,23 +146,6 @@ $RECYCLE.BIN/
 # --- Linux ---
 *~
 
-# =========================
-# Project-Specific Files
-# =========================
-
-# --- Data Files ---
-data/processed/walmart_data_featured.parquet
-# data/raw/*.csv  # Uncomment if raw CSVs are large or shouldn't be versioned
-
-# --- Model Artifacts ---
-models_store/
-
-# --- Experiment Logs & Reports ---
-reports/experiment_logs/*.csv
-
-# --- NLTK Data ---
-nltk_data/
-
 # --- Jupyter Notebook Checkpoints ---
 .ipynb_checkpoints/
 
