@@ -59,7 +59,7 @@ cover/
 *.pot
 
 # --- Django ---
-*.log
+# *.log # Covered by general .log in Miscellaneous
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -94,7 +94,14 @@ venv_py311/  # Specific virtual environment
 # =========================
 
 # --- VS Code ---
+# Ignore most contents of .vscode, but explicitly track (un-ignore) essential config files.
+# This means other .json files inside .vscode/ will be ignored by .vscode/*
 .vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
 
 # --- JetBrains (PyCharm, IntelliJ, etc.) ---
 .idea/
@@ -146,15 +153,38 @@ $RECYCLE.BIN/
 
 # --- Streamlit ---
 .streamlit/
-.streamlit/secrets.toml
+# If you want to track your secrets.toml (e.g., if it's a template or non-sensitive),
+# add this line AFTER '.streamlit/*':
+# !.streamlit/secrets.toml
+
+# =========================
+# Model, Data, and Log Files
+# =========================
+# To ensure .txt, .keras, .joblib, .json, .parquet, .csv files
+# (especially your models and processed data) ARE TRACKED,
+# make sure there are NO general rules like '*.keras' or 'models_store/'
+# that would ignore them.
+#
+# For example, DO NOT have lines like these if you want to track these files:
+# *.keras
+# *.joblib
+# *.json
+# *.txt
+# *.parquet
+# models_store/
+# data/processed/
+#
+# If you want to ignore specific large data files but track others,
+# list the specific large files to ignore, e.g.:
+# data/raw/very_large_raw_file.zip
 
 # --- Miscellaneous ---
 *.tmp
 *.bak
 *.swp
-*.log
-logs/
+*.log # General log files (if not already covered by more specific rules)
+logs/ # Directories named 'logs' and their contents
 
 # --- dotenv ---
+# Ignore environment variable files
 .env.*
-!.env.example
