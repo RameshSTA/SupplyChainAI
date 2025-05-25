@@ -37,8 +37,4 @@ keras==3.10.0
 pyarrow==20.0.0 # or fastparquet if you prefer for pandas parquet operations
 
 # Optional: For notebook 'display()' function, if any app code somehow relies on it (unlikely)
-<<<<<<< HEAD
 # ipython==8.12.3
-=======
-# ipython==8.12.3
->>>>>>> ed3f7b250f7a43b201ccff131f9bff1206fcddfb
