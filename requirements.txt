@@ -1,7 +1,5 @@
 absl-py==1.4.0
 altair==5.5.0
-amqp-client-python==0.1.11
-amqplib==1.0.2
 annotated-types==0.6.0
 anyio==4.9.0
 appnope==0.1.4
