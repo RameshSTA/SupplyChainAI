@@ -1,0 +1,182 @@
+# =========================
+# Python .gitignore
+# =========================
+
+# --- Python Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- C Extensions ---
+*.so
+
+# --- Distribution / Packaging ---
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- PyInstaller ---
+*.manifest
+*.spec
+
+# --- Installer Logs ---
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Unit Test / Coverage Reports ---
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# --- Translations ---
+*.mo
+*.pot
+
+# --- Django ---
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# --- Flask ---
+instance/
+.webassets-cache
+
+# --- Scrapy ---
+.scrapy
+
+# --- Sphinx Documentation ---
+docs/_build/
+
+# --- PyBuilder ---
+target/
+
+# =========================
+# Virtual Environments
+# =========================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+venv_py311/  # Specific virtual environment
+
+# =========================
+# IDEs and Editors
+# =========================
+
+# --- VS Code ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# --- JetBrains (PyCharm, IntelliJ, etc.) ---
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# --- Sublime Text ---
+*.sublime-project
+*.sublime-workspace
+
+# --- Atom ---
+.atom/
+*.[Pp]ackage.json.lock
+*.[Tt]mp
+
+# --- Eclipse ---
+.project
+.pydevproject
+.settings/
+
+# --- NetBeans ---
+nbproject/
+
+# =========================
+# OS Files
+# =========================
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# --- Windows ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Linux ---
+*~
+
+# =========================
+# Project-Specific Files
+# =========================
+
+# --- Data Files ---
+data/processed/walmart_data_featured.parquet
+# data/raw/*.csv  # Uncomment if raw CSVs are large or shouldn't be versioned
+
+# --- Model Artifacts ---
+models_store/
+
+# --- Experiment Logs & Reports ---
+reports/experiment_logs/*.csv
+
+# --- NLTK Data ---
+nltk_data/
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints/
+
+# --- Streamlit ---
+.streamlit/
+.streamlit/secrets.toml
+
+# --- Miscellaneous ---
+*.tmp
+*.bak
+*.swp
+*.log
+logs/
+
+# --- dotenv ---
+.env.*
+!.env.example

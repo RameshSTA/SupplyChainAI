@@ -1,0 +1,59 @@
+# Configuration file for the Supply Chain Intelligence Platform
+
+# Note: Paths defined here are relative to the project root.
+# The config_loader.py will handle making them absolute if needed.
+
+paths:
+  data: "data"
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  
+  reports: "reports"
+  experiment_logs: "reports/experiment_logs"
+  
+  model_store: "models_store"
+  demand_forecasting_models: "models_store/demand_forecasting"
+  demand_forecasting_scalers: "models_store/demand_forecasting/scalers"
+  risk_detection_models: "models_store/risk_detection"
+
+  # For Streamlit app structure (relative to project_root)
+  app_dir: "app"
+  page_content_dir: "app/page_content"
+  src_dir: "src"
+
+filenames:
+  # Data files
+  walmart_train_data: "train.csv"
+  walmart_features_data: "features.csv"
+  walmart_stores_data: "stores.csv"
+  featured_data: "walmart_data_featured.parquet"
+  sample_risk_news: "sample_risk_news.csv"
+
+  # Log filenames (used by training scripts to save, and by Streamlit to load)
+  classical_ts_log: "classical_timeseries_experiments.csv"
+  classical_reg_log: "classical_regression_experiments.csv"
+  deep_learning_log: "deep_learning_experiments.csv"
+  risk_classification_log: "risk_classification_experiments.csv"
+
+# Example: General project settings or constants
+project_settings:
+  default_random_state: 42
+  weeks_in_year: 52
+
+# Example: Parameters for demand forecasting models (can be expanded)
+# demand_forecasting_params:
+#   test_split_ratio: 0.2
+#   lstm_sequence_length: 12
+#   default_lags: [1, 4, 12, 52]
+#   default_roll_windows: [4, 12, 26]
+
+# Example: Parameters for inventory optimization (defaults for UI)
+# inventory_params:
+#   default_avg_weekly_demand: 100
+#   default_std_dev_weekly_demand: 20
+#   default_item_cost: 10.0
+#   default_ordering_cost: 50.0
+#   default_holding_rate_percent: 20
+#   default_avg_lead_time_weeks: 4
+#   default_std_dev_lead_time_weeks: 1
+#   default_service_level_percent: 95
